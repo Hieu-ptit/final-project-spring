@@ -22,6 +22,7 @@ public class DiaryController {
         System.out.println("AAAAAAAAAAAA");
         System.out.println("CCCCCCCCCC");
         System.out.println("EEEEEEEEEEEE");
+        System.out.println("FFFFFFFFFFFFFFFFFFFFFFFFFFF");
         System.out.println("DDDDDDDDDDDD");
         System.out.println("BBBBBBBBBBBBBBB");
         return diaryService.createDiary(diaryRequest);
