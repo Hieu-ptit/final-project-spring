@@ -1,4 +1,4 @@
 package com.example.demo.services.business.impls;
 
-public class CategoryService {
+public class DiaryServiceImpl {
 }
