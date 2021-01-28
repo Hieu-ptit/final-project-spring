@@ -1,7 +1,7 @@
 package com.example.demo.controllers;
 
-import com.example.demo.models.ins.DiaryRequest;
-import com.example.demo.models.outs.DiaryDto;
+import com.example.demo.models.in.DiaryRequest;
+import com.example.demo.models.out.DiaryDto;
 import com.example.demo.services.business.DiaryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -19,6 +19,8 @@ public class DiaryController {
 
     @PostMapping
     public DiaryDto postClass(@Valid @RequestBody DiaryRequest diaryRequest) {
+        System.out.println("AAAAAAAAAAAA");
+        System.out.println("BBBBBBBBBBBBBBB");
         return diaryService.createDiary(diaryRequest);
     }
 
