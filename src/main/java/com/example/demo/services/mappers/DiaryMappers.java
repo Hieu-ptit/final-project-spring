@@ -3,10 +3,12 @@ package com.example.demo.services.mappers;
 import com.example.demo.models.entities.DiaryEntity;
 import com.example.demo.models.in.DiaryRequest;
 import com.example.demo.models.out.DiaryDto;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
+@Component
 public class DiaryMappers {
     public List<DiaryDto> mapDiaryDto(List<DiaryEntity> diaryEntity){
         return  diaryEntity.stream().map(this::mapDiaryDto).collect(Collectors.toList());
