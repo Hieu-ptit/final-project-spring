@@ -19,6 +19,7 @@ public class DiaryController {
 
     @PostMapping
     public DiaryDto postClass(@Valid @RequestBody DiaryRequest diaryRequest) {
+        System.out.println("AAAAAAAAAAAA");
         return diaryService.createDiary(diaryRequest);
     }
 
